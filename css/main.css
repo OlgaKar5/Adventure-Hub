@@ -1,0 +1,519 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #fde1a1, #fbf0c2);
+    background-repeat: no-repeat;
+}
+
+.video {
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    background-size: contain;
+    object-fit: cover;
+    z-index: 0;
+    background-position: 100% center;
+    overflow: clip;
+    position: absolute;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #645d54;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;
+}
+
+.logo a {
+    display: flex;
+    font-size: 24px;
+}
+
+.logo img {
+    position: fixed;
+    z-index: 1000;
+    height: auto;
+    width: 80px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: background-color 0.5s;
+}
+
+.nav-links a:hover {
+    color: #f1df93;
+    background-color: #7f745b;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #282c34;
+    min-width: 160px;
+    z-index: 1;
+    transition: background-color 0.5s;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.5s;
+}
+
+.dropdown-content a:hover {
+    background-color: #3b4048;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown button:hover {
+    color: #f1df93;
+    background-color: #7f745b;
+}
+
+.news {
+    margin-left: 20%;
+    margin-top: 50px;
+    width: 60%;
+    height: 1000px;
+    padding: 20px;
+    float: left;
+    background-color: #fde1a1;
+}
+
+.news h2 {
+    margin: 0;
+}
+
+.news-block {
+    height: 210px;
+    width: auto;
+
+    background-color: rgb(252, 240, 170);
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 10px;
+    transition: background-color 0.8s
+}
+
+.news-block p {
+    margin: 0;
+    width: auto;
+}
+
+.news-block:hover {
+    background-color: rgb(243, 192, 153);
+}
+
+.footer {
+    clear: both;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 9px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.footer p {
+    font-size: 15px;
+}
+
+.game-bg {
+    background: #80776d;
+    height: 100vh;
+    width: 100vw;
+}
+
+.game-bg1 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #fde1a1, #fbf0c2);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+@media (width<566px) {
+    .news {
+        margin-top: 40px;
+    }
+}
+
+button {
+    z-index: 3;
+    background-color: #282c3400;
+    border: 0px;
+}
+
+button img {
+    height: 20vh;
+    width: auto;
+    background-color: #282c3400;
+    animation: shake 0.5s ease-in-out infinite alternate;
+
+
+    @keyframes shake {
+        0% {
+            transform: rotate(15deg);
+        }
+
+        100% {
+            transform: rotate(-15deg);
+        }
+    }
+}
+
+button img:hover {
+    animation: step-end
+}
+
+.conten {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-47%, 0);
+    background-color: #cccccc77;
+    border-radius: 40px;
+    width: 250px;
+}
+
+.conten h1 {
+    text-align: center;
+    color: #1d2637;
+}
+
+.conten h1:hover {
+    color: #D78119;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+.slider-container {
+    width: 90%;
+    overflow: hidden;
+
+}
+
+.game-button1 {
+    position: absolute;
+    left: 30%;
+    bottom: -90vh;
+    background-color: #f1d693;
+    border-radius: 4px;
+    width: 90px;
+    height: 45px;
+}
+
+.game-button2 {
+    position: absolute;
+    right: 30%;
+    bottom: -90vh;
+    background-color: #f1d693;
+    border-radius: 4px;
+    width: 90px;
+    height: 45px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.character-info h2,
+p {
+    flex: 1;
+    text-align: left;
+    width: 500px;
+    margin-left: 10vw;
+}
+
+.character-info {
+    flex: 1;
+    text-align: left;
+    width: 20vw;
+}
+
+.character-image {
+    height: 480px;
+    width: auto;
+    margin-right: 30vw;
+}
+
+@media (width>1550px) {
+    .slider {
+        height: auto;
+        width: 90vw;
+    }
+
+    .slide {
+        height: auto;
+        width: 90vw;
+    }
+
+    .character-image {
+        height: 700px;
+        width: auto;
+        margin-right: 10vw;
+        margin-bottom: 10px;
+    }
+
+    .character-info h2,
+    p {
+        flex: 1;
+        width: 700px;
+        text-align: left;
+        font-size: 20px;
+        margin-left: 10vw;
+    }
+
+    .character-info h2 {
+        font-size: 30px;
+    }
+
+    .game-button1 {
+        position: absolute;
+        left: 30%;
+        bottom: -95vh;
+        font-size: 20px;
+        width: 110px;
+        height: 55px;
+    }
+
+    .game-button2 {
+        position: absolute;
+        right: 30%;
+        bottom: -95vh;
+        font-size: 20px;
+        width: 110px;
+        height: 55px;
+    }
+}
+
+@media (width<850px) {
+    .slider {
+        height: auto;
+        width: 90vw;
+    }
+
+    .slide {
+        height: auto;
+        width: 90vw;
+    }
+
+    .character-image {
+        height: 325px;
+        width: auto;
+        margin-right: 0px;
+    }
+
+    .character-info h2,
+    p {
+        flex: 1;
+        text-align: left;
+
+        margin-left: 0px;
+    }
+}
+
+@media(height<700px) {
+    .game-button1 {
+        position: absolute;
+        left: 30%;
+        bottom: -95vh;
+    }
+
+    .game-button2 {
+        position: absolute;
+        right: 30%;
+        bottom: -95vh;
+    }
+}
+
+.QA-bg {
+    margin-top: 50px;
+    position: relative;
+    margin-top: 0px;
+    background-color: #fde1a1;
+    height: 100vh;
+    width: 100vw;
+}
+
+.QA-bg h1 {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    bottom: 60px;
+}
+
+.table {
+    position: absolute;
+    top: 25%;
+    margin-left: 15%;
+    background-color: #fde1a1;
+    border-collapse: collapse;
+    height: auto;
+    width: 70%;
+    border-spacing: 0;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.table td,
+.table th {
+    border: 1px solid #3a2828;
+    background: rgb(230, 193, 125);
+    padding: 5px;
+    width: 30px;
+    height: 25px;
+}
+
+.table td {
+    font-size: 20px;
+    color: #42322b;
+    text-align: left;
+}
+
+.table th {
+    font-size: 25px;
+    color: #251c19;
+    background: rgb(210, 171, 98);
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+}
+
+.registration-form {
+    margin-top: 30vh;
+    width: 60%;
+    margin-left: 20vw;
+    height: 100vh;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 94%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.log button {
+    width: 30%;
+    padding: 10px;
+    background-color: #48423b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    margin-left: 35%;
+}
+
+.log button:hover {
+    color: #f1df93;
+    background-color: #7f745b;
+}
+
+@media (width>900px) {
+    label {
+        text-align: left;
+        margin-left: 18%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 60%;
+        margin-left: 18%;
+    }
+
+    .log button {
+        width: 30%;
+        min-width: 100px;
+        margin-left: 35%;
+    }
+}
+
+@media (width<812px) {
+    .log button {
+        width: 200px;
+        margin-left: 15%;
+    }
+}

@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #fde1a1, #fbf0c2);
+    background-repeat: no-repeat;
+
+    margin: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #fde1a1, #fbf0c2);
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #645d54;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;
+}
+
+.logo a {
+    display: flex;
+    font-size: 24px;
+}
+
+.logo img {
+    position: fixed;
+    z-index: 1000;
+    height: auto;
+    width: 80px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: background-color 0.5s;
+
+}
+
+.nav-links a:hover {
+    color: #f1df93;
+    background-color: #645d54;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #282c34;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.5s
+}
+
+.dropdown-content a:hover {
+    background-color: #3b4048;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown button:hover {
+    color: #f1df93;
+    background-color: #7f745b;
+}
+
+.footer {
+    clear: both;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 9px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 90px;
+    padding-left: 10px;
+}
+
+.forum-dropdown {
+    margin-right: 5vw;
+}
+
+.forum-cont {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.search-field {
+    margin-bottom: 20px;
+    display: flex;
+    margin-left: 50px;
+}
+
+.search-field input {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+
+.search-field button {
+    background-color: #5b9bd5;
+    border: none;
+    padding: 10px;
+    width: 45px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.search-field button img {
+    width: 20px;
+    height: 20px;
+}
+
+.comments-section {
+    flex-grow: 1;
+
+}
+
+.comment {
+    display: flex;
+    margin-bottom: 25px;
+
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-text {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+    width: 50vw;
+    height: 10vh;
+}
+
+.comment-text1 {
+    background-color: #f1f1f100;
+    width: 30vw;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+
+.new-comment {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.new-comment input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+@media (width>900px) {
+    .forum-dropdown {
+        margin-right: 20vh;
+    }
+}
