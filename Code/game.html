@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Загрузка игры</title>
+    <link rel="icon" href="LikLOG.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" type="text/css" href="main.css" </head>
+</head>
+
+<body>
+    <div class="logo">
+        <a href="main.html"><img src="LOGO.png"></a>
+    </div>
+    <div class="navbar">
+
+        <div class="nav-links">
+            <a href="main.html">Главная</a>
+            <div class="dropdown">
+                <button class="dropbtn">Контакты</button>
+                <div class="dropdown-content">
+                    <a href="#">VK</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Навигация</button>
+                <div class="dropdown-content">
+                    <a href="game.html">Игра</a>
+                    <a href="forum.html">Форум</a>
+                    <a href="QandA.html">Q&A</a>
+                    <a href="login.html">Вход</a>
+                </div>
+            </div>
+            <a href="game.html#game-cont">Игровой контент</a>
+
+        </div>
+    </div>
+    <div class="bg">
+        <div class="game-bg">
+            <video src="Фон.mp4" autoplay="autoplay" muted="muted" loop="loop" class="video"></video>
+            <a href="#" download="#">
+                <div class="conten">
+                    <h1>Играть!</h1>
+                    <div class="">
+                        <button><img src="doulingo.png"></button>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="game-bg1" id="game-cont">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <div class="character-info">
+                            <h2>Квит Ростан</h2>
+                            <p>Главный герой нашей истории. Он немного неловкий и застенчивый парень, не пользующийся
+                                популярностью среди сверстников из-за своей внешности и характера. Квит постоянно
+                                чувствует себя неуверенно и старается держаться в тени. Он очень умный и старательный,
+                                но его неуверенность мешает ему проявлять себя во всей красе. Квит оказывается в центре
+                                внимания Чарлотт, что кардинально меняет его жизнь</p>
+                        </div>
+                        <img src="character4.png" alt="Персонаж 4" class="character-image">
+                    </div>
+                    <div class="slide">
+                        <div class="character-info">
+                            <h2>Чарли Дитеирих</h2>
+                            <p>Главная героиня нашей истории. Она высокая и стройная девушка с красотой и хитростью
+                                богини. Чарли является лидером среди Чарлотт, пользуется популярностью в школе и
+                                привыкла, что все ее слушаются. Она умна и расчетлива, всегда знает, как добиться
+                                своего. Чарли обладает сильным характером и обычно идет напролом, не слушая ничьих
+                                советов. Она постоянно находится в центре внимания и окружена друзьями и поклонниками
+                            </p>
+                        </div>
+                        <img src="character1.png" alt="Персонаж 1" class="character-image">
+                    </div>
+                    <div class="slide">
+                        <div class="character-info">
+                            <h2>Лотти Аллан</h2>
+                            <p>Одна из главных героинь нашей истории. Она жизнерадостная, озорная и немного
+                                легкомысленная девушка. Лотти всегда окружена друзьями. Она дружелюбна и общительна, она
+                                не может постоять за себя, так как она старается никого не обидеть. Немного глуповата,
+                                но это дает ей особый шарм</p>
+                        </div>
+                        <img src="character2.png" alt="Персонаж 2" class="character-image">
+                    </div>
+                    <div class="slide">
+                        <div class="character-info">
+                            <h2>Шарли Бетрен</h2>
+                            <p>Не совсем подруга героинь, она скорее "работает" с ними, чтобы повысить свой статус в
+                                школе. Шарли пользуется популярностью среди парней и привыкла привлекать к себе внимание
+                                за счет своей внешности. Она пытается казаться сильной и независимой, но на самом деле
+                                страдает от неуверенности в себе и постоянно старается найти одобрение у других</p>
+                        </div>
+                        <img src="character3.png" alt="Персонаж 3" class="character-image">
+                    </div>
+
+                </div>
+            </div>
+            <button id="prev" class="game-button1">Назад</button>
+            <button id="next" class="game-button2">Вперед</button>
+            <script src="script.js"></script>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2025 Все права защищены. Мой сайт по игре.</p>
+    </div>
+</body>
+
+</html>
